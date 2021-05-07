@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   function updateTemperature() {
-    document.querySelector('#temperature').innerText = thermostat.temperature;
+    document.querySelector('#temperature').innerText = `${thermostat.temperature}°C`;
     document.querySelector('#temperature').className = thermostat.energyUsage();
   };
 

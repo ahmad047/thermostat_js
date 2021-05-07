@@ -13,27 +13,52 @@
   <title>Thermostat</title>
 </head>
 
-<body>
-  <section>
-    <div id="sth" class="container">
+<body class="colorbg">
+
+
+  <div id="sth" class="container">
+    <div>
       <h1 class="h1 text-center">Thermostat</h1>
-      <h4 class="h4">Current temperature in your city: <span id="current-temperature">20</span></h4><br>
-        <form id="select-city">
-          <input id="current-city" type="text" placeholder="Enter a city"></input>
-          <input type="submit"></input>
-        </form>
-        <h1 id="temperature"></h1>
-        <p>
-          power saving mode is <span id="power-saving-status">on</span><br>
-          <button id="temperature-up">+</button><br>
-          <button id="temperature-down">-</button><br>
-          <button id="temperature-reset">reset</button><br>
-          <button id="powersaving-on">PSM on</button><br>
-          <button id="powersaving-off">PSM off</button><br>
-        </p>
+      <h8 class="h8">Current temperature in your city: <span id="current-temperature"></span></h8><br>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+    </div>
+    <div style="padding: 30px">
+    </div>
+    <div class="mt-5 pt-5 position-relative d-flex flex-row justify-content-center align-items-center dial">
+      <div class="outer position-absolute">
+        <div class="marker"></div>
+      </div>
+      <div class="middle position-absolute"></div>
+      <div class="inner position-absolute d-flex flex-column justify-content-center align-items-center">
+        <span id="temperature" class="font48 weight-700 dark-grey">°C</span>
+
+      </div>
 
     </div>
-  </section>
+
+    <div style="padding: 30px">
+    </div>
+
+    <div class="bottom">
+      <p class="text-center">power saving mode is <span id="power-saving-status"> on</span></p>
+
+      <div class="text-center">
+        <button id="temperature-up">+</button>
+        <button id="temperature-down">-</button>
+      </div>
+
+
+      <div class="text-center">
+        <button id="temperature-reset">reset</button>
+        <button id="powersaving-on">PSM on</button>
+        <button id="powersaving-off">PSM off</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/thermostat.js"></script>
   <script src="js/interface.js"></script>
 </body>

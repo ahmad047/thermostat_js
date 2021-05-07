@@ -17,9 +17,13 @@ body {
   height: 100vh;
 }
 
+.colorbg{
+  background-color: grey;
+}
+
 div.container {
   width: 300px;
-  height: 600px;
+  height: 700px;
   background: #f2f5fa;
   border-radius: 30px;
 }
@@ -132,13 +136,13 @@ div.outer::after {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-div.menu>i {
-  color: #41454a;
-  font-size: 20px;
-}
 
 div.menu>i.active {
   background: linear-gradient(to bottom, #2fddea, #5bc1de);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bottom {
+  margin: 100px 0px 50px 0px;
 }
